@@ -1,6 +1,6 @@
 function isValid(s) {
-  let stack = []
-  let store = { ')': '(', '}': '{', ']': '[' }
+  const stack = []
+  const store = { ')': '(', '}': '{', ']': '[' }
 
   for (let i = 0; i < s.length; i++) {
     if (stack.length < 1) stack.push(s[i]) // add to stack if nothing in
