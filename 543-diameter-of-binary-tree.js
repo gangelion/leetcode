@@ -1,3 +1,5 @@
+// Failed
+
 function diameterOfBinaryTree(root) {
   if (!root) return null
 
