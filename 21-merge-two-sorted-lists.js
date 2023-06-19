@@ -15,4 +15,4 @@ function mergeTwoLists(list1, list2) {
   current.next = list1 ?? list2
 
   return head.next
-};
+}

@@ -8,4 +8,4 @@ function invertTree(root) {
   invertTree(root.right)
 
   return root
-};
+}
