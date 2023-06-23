@@ -1,11 +1,11 @@
-// should pass but failed
 function removeDuplicates(nums) {
-  const uniqs = []
-  nums.forEach((num) => {
-    if (!uniqs.includes(num)) {
-      uniqs.push(num)
-    }
-  })
+  if (nums.length === 1) return 1
 
-  return uniqs.length
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums.splice(i, 1)
+      i--
+    }
+  }
+  return nums.length
 }
